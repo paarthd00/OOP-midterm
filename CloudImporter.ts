@@ -6,9 +6,11 @@ import Song from "./Song";
 
 export class CloudImporter implements IImportable {
     file: string;
+    
     constructor(file: string) {
         this.file = file;
     }
+    
     loadPlaylist() {
         let playlist = new Playlist(this.file);
 

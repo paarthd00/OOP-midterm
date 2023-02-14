@@ -1,7 +1,9 @@
 import Album from "./Album";
+
 export default class Artist {
     private _name!: string;
     private _albums!: Album[];
+
     constructor(name: string) {
         this.setName(name);
     }
@@ -17,8 +19,8 @@ export default class Artist {
     setName(name: string) {
         this._name = name;
     }
+    
     setAlbums(albums: Album[]) {
         this._albums = albums;
     }
-
 } 

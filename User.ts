@@ -18,15 +18,19 @@ export default class User {
     setUsername(username: string) {
         this._username = username;
     }
+    
     setPassword(password: string) {
         this._password = password;
     }
+    
     getUsername(): string {
         return this._username;
     }
+    
     getPassword(): string {
         return this._password;
     }
+    
     addPlaylist(playlist: Playlist): void {
         this.playlists.push(playlist);
     }

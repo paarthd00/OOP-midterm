@@ -1,5 +1,6 @@
 import Artist from './Artist';
 import Song from './Song';
+
 export default class Album {
     private _title!: string;
     private _artist!: Artist;
@@ -12,14 +13,19 @@ export default class Album {
         this.setYear(year);
         this.tracks = [];
     }
+
     setTitle(title: string) {
+        this._title = title;
     }
+
     setArtist(artist: Artist) {
         this._artist = artist;
     }
+
     setYear(year: number) {
         this._year = year;
     }
+
     addTrack(track: Song) {
         this.tracks.push(track);
     }
