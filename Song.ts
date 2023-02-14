@@ -2,14 +2,14 @@ export default class Song {
     private _title!: string;
 
     constructor(title: string) {
-        this.setName(title);
+        this.setTitle(title);
     }
-    
-    getName(): string {
+
+    getTitle(): string {
         return this._title;
     }
-    
-    setName(name: string) {
+
+    setTitle(name: string) {
         this._title = name;
     }
 }
